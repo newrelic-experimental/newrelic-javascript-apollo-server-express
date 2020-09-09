@@ -1,0 +1,35 @@
+{
+  "name": "@newrelic/apollo-server-express",
+  "version": "1.0.0",
+  "description": "Apollo Server Express instrumentation for the New Relic Node agent",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm run unit && npm run versioned",
+    "unit": "tap tests/unit/**/*.tap.js",
+    "versioned": "versioned-tests --minor -i 2 'tests/versioned/*.tap.js'",
+    "lint": "eslint *.js lib tests"
+  },
+  "author": "New Relic Node.js agent team <nodejs@newrelic.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/newrelic/apollo-server-express-inst"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "@newrelic/test-utilities": "^3.0.0",
+    "apollo-server-express": "^2.1.0",
+    "coveralls": "^3.0.0",
+    "eslint": "5.8.0",
+    "graphql": "^14.0.2",
+    "newrelic": "^5.7.0",
+    "semver": "^5.6.0",
+    "tap": "^12.0.1"
+  },
+  "peerDependencies": {
+    "newrelic": ">=3.3.1"
+  }
+}

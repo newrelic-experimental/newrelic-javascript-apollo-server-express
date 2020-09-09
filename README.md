@@ -1,27 +1,37 @@
 [![Experimental Project header](https://github.com/newrelic/opensource-website/raw/master/src/images/categories/Experimental.png)](https://opensource.newrelic.com/oss-category/#experimental)
 
-# [Name of Project] [build badges go here when available]
+# newrelic-javascript-apollo-server-express Instrumentation for Apollo GraphQL on Express
 
->[Brief description - what is the project and value does it provide? How often should users expect to get releases? How is versioning set up? Where does this project want to go?]
+New Relic's apollo-server-express framework instrumentation for use with the
+[Node agent](https://github.com/newrelic/node-newrelic). 
 
 ## Installation
 
-> [Include a step-by-step procedure on how to get your code installed. Be sure to include any third-party dependencies that need to be installed separately]
+This module is dependent on the newrelic nodejs agent, It can be installed and loaded independenly based on spacific versioning needs.
+
+Newrelic agent:
+```
+npm install newrelic
+```
+
+apollo-server-express instrumentation module:
+```
+npm install @newrelic/apollo-server-express
+```
+
+// for install from github, add the following in  package.json
+"dependencies": {
+  "@newrelic/apollo-server-express": "github:newrelic-experimental/newrelic-javascript-apollo-server-express"
+}
+```
 
 ## Getting Started
->[Simple steps to start working with the software similar to a "Hello World"]
 
-## Usage
->[**Optional** - Include more thorough instructions on how to use the software. This section might not be needed if the Getting Started section is enough. Remove this section if it's not needed.]
-
-
-## Building
-
->[**Optional** - Include this section if users will need to follow specific instructions to build the software from source. Be sure to include any third party build dependencies that need to be installed separately. Remove this section if it's not needed.]
-
-## Testing
-
->[**Optional** - Include instructions on how to run tests if we include tests with the codebase. Remove this section if it's not needed.]
+Add this module along with newrelic agent and you will see graphql schema type in the request show up as transacations.
+```
+// index.js
+require('@newrelic/apollo-server-express');
+```
 
 ## Support
 
@@ -30,7 +40,7 @@ New Relic hosts and moderates an online forum where customers can interact with 
 >Add the url for the support thread here
 
 ## Contributing
-We encourage your contributions to improve [project name]! Keep in mind when you submit your pull request, you'll need to sign the CLA via the click-through using CLA-Assistant. You only have to sign the CLA one time per project.
+We encourage your contributions to improve newrelic-javascript-apollo-server-express! Keep in mind when you submit your pull request, you'll need to sign the CLA via the click-through using CLA-Assistant. You only have to sign the CLA one time per project.
 If you have any questions, or to execute our corporate CLA, required if your contribution is on behalf of a company,  please drop us an email at opensource@newrelic.com.
 
 ## License
