@@ -20,6 +20,7 @@ npm install @newrelic/apollo-server-express
 ```
 
 // for install from github, add the following in  package.json
+```
 "dependencies": {
   "@newrelic/apollo-server-express": "github:newrelic-experimental/newrelic-javascript-apollo-server-express"
 }
