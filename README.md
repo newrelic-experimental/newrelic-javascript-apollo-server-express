@@ -28,7 +28,7 @@ npm install @newrelic/apollo-server-express
 
 ## Getting Started
 
-Add this module along with newrelic agent and you will see graphql schema type in the request show up as transacations.
+Add this module along with newrelic agent and you will see graphql schema type in the request show up as transacations in the Newrelic UI.
 ```
 // index.js
 require('@newrelic/apollo-server-express');
