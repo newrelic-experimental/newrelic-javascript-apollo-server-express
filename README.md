@@ -1,6 +1,6 @@
 [![Experimental Project header](https://github.com/newrelic/opensource-website/raw/master/src/images/categories/Experimental.png)](https://opensource.newrelic.com/oss-category/#experimental)
 
-# newrelic-javascript-apollo-server-express Instrumentation for Apollo GraphQL on Express
+# New Relic JavaScript Instrumentation for Apollo GraphQL on Express
 
 New Relic's apollo-server-express framework instrumentation for use with the
 [Node agent](https://github.com/newrelic/node-newrelic). 
